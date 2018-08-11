@@ -1,7 +1,6 @@
 
 const http = require('http')
 const port = 9595
-const port2 = 5050
 const ip = 'localhost'
 
 const server = http.createServer((req, res) => {
@@ -12,6 +11,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, ip, () => {
   console.log(`Servidor rodando em http://${ip}:${port}`)
+  console.log('testando...')
   console.log('Para derrubar o servidor: ctrl + c');
 })
 
